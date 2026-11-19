@@ -1,0 +1,29 @@
+# FFmpeg is downloaded by build.bat (GPL, not part of this repo)
+ffmpeg.exe
+ffmpeg.zip
+ffmpeg_tmp/
+
+# Build output
+.venv/
+build/
+dist/
+*.spec
+installer/*.exe
+*.exe
+*.zip
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Logs, backups and local settings
+*.log
+*.bak*
+.easyrecord.json
+
+# Your own recordings, screenshots and the join list, if you save them in this folder
+EasyRecord *
+*.mp4
+*.mkv
+*.jpg
+*.jpeg

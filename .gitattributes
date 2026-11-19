@@ -1,0 +1,10 @@
+# Text files are stored with LF in git; on disk they follow each PC's core.autocrlf.
+* text=auto
+# These always check out as CRLF on every PC (cmd can misread LF batch files).
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.vbs text eol=crlf
+# Pictures stay byte-exact.
+*.ico binary
+*.png binary

@@ -1,0 +1,12 @@
+EasyRecord uses FFmpeg to record your screen.
+
+FFmpeg (essentials build from https://www.gyan.dev/ffmpeg/builds/, downloaded by build.bat)
+Copyright (c) 2000-2026 the FFmpeg developers
+
+This FFmpeg build is licensed under the GNU General Public License,
+version 3 (GPLv3). The full license text is in GPL-3.0.txt next to this
+file, and online at https://www.gnu.org/licenses/gpl-3.0.html
+
+FFmpeg's source code is available from https://ffmpeg.org/download.html
+and the exact build sources from https://www.gyan.dev/ffmpeg/builds/
+EasyRecord itself is a separate program that runs ffmpeg.exe.
