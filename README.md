@@ -10,6 +10,24 @@ Record or **F12**. The video is saved as an MP4 by itself.
 - **F11** - screenshot
 - Can record your microphone and the sound your computer plays.
 
+## What it looks like
+
+The small main window: pick Screen, Window or Area, then press REC.
+
+![EasyRecord main window with the Screen, Window and Area buttons, the timer and the REC button](docs/screenshots/main-window.png)
+
+Press the gear to open the settings. The Home page shows how to get started.
+
+![EasyRecord with the settings open on the Get started page](docs/screenshots/get-started.png)
+
+Video settings: quality and frames per second.
+
+![EasyRecord video settings with the quality slider at 80% and 30 frames per second picked](docs/screenshots/settings-video.png)
+
+General settings: where your files are saved.
+
+![EasyRecord general settings with the save folder and the keep-on-top option](docs/screenshots/settings-general.png)
+
 ## What you need
 
 - Windows 10 or 11 (recording uses Windows-only parts).
