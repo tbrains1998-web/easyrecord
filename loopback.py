@@ -210,7 +210,7 @@ class LoopbackCapture:
 
     def ffmpeg_args(self, port):
         # Tiny probe so FFmpeg starts without waiting for sound to arrive.
-        return ["-thread_queue_size", "1024", "-probesize", "32",
+        return ["-probesize", "32",
                 "-analyzeduration", "0", "-f", self.fmt, "-ar", str(self.rate),
                 "-ac", str(self.channels), "-i", f"tcp://127.0.0.1:{port}?listen=1"]
 

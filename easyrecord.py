@@ -174,7 +174,7 @@ class Recorder:
             except Exception:
                 self.sound = None
         if mic:
-            audio_in += ["-thread_queue_size", "1024", "-f", "dshow",
+            audio_in += ["-f", "dshow",
                          "-audio_buffer_size", "50", "-i", f"audio={mic}"]
         tracks = audio_in.count("-i")
         if tracks == 2:   # mix computer sound and mic into one track
@@ -187,8 +187,9 @@ class Recorder:
             audio_out = []
         if tracks:
             audio_out += ["-c:a", "aac", "-b:a", "192k"]
+        # No -thread_queue_size: FFmpeg 9 only accepts it on outputs.
         cmd = [self.ffmpeg, "-hide_banner", "-y",
-               "-thread_queue_size", "512", *target.ffmpeg_input_args(fps),
+               *target.ffmpeg_input_args(fps),
                *audio_in,
                *audio_out,
                "-c:v", "libx264", "-preset", "veryfast",
